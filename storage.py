@@ -11,7 +11,7 @@ class AlreadyDownloadedError(Exception):
 
 class Storage(object):
     def __init__(self):
-        self._skipped_files = [
+        self._skipped_files = []
 
     def new_file(self, filename):
         if path.exists(filename):
